@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Haryana CET Updates - Full CSS File */
+
+:root{
+  --brand:#e60023; /* deep red */
+  --accent:#000000; /* black */
+  --muted:#444;
+  --bg:#f4f4f4;
+  --card:#ffffff;
+  --max-width:1100px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Segoe UI,Roboto,Arial,sans-serif;margin:0;background:var(--bg);color:#111}
+.container{max-width:var(--max-width);margin:20px auto;padding:16px}
+
+/* HEADER */
+header.site-header{position:sticky;top:0;z-index:999;background:linear-gradient(90deg,#e60023,#ff4d4d);color:#fff;padding:20px 0;border-radius:0 0 10px 10px;box-shadow:0 4px 20px rgba(0,0,0,0.25);backdrop-filter:blur(6px);}
+.site-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .mark{width:48px;height:48px;border-radius:8px;background:#fff;color:var(--brand);display:grid;place-items:center;font-weight:700}
+.logo h1{margin:0;font-size:20px}
+.logo p{margin:0;font-size:12px;opacity:.95}
+
+/* NAVIGATION */
+nav.main-nav{display:flex;gap:12px}
+nav.main-nav a{color:#fff;text-decoration:none;padding:8px 12px;border-radius:6px;font-weight:600}
+nav.main-nav a:hover{background:rgba(255,255,255,0.15)}
+
+/* SEARCH */
+.search-wrap{display:flex;gap:8px;align-items:center}
+.search-wrap input{padding:8px 10px;border-radius:6px;border:none;min-width:200px}
+.search-wrap button{background:var(--accent);border:none;color:#fff;padding:8px 12px;border-radius:6px;cursor:pointer}
+
+/* GRID LAYOUT */
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:18px;margin-top:18px}
+
+/* CARD */
+.card{background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(10,20,40,0.06)}
+
+/* ARTICLES */
+.article{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed #eef}
+.article:last-child{border-bottom:none}
+.article img{width:160px;height:100px;object-fit:cover;border-radius:8px}
+.article h3{margin:0 0 6px 0;font-size:16px}
+.meta{font-size:12px;color:var(--muted);margin-bottom:8px}
+.excerpt{font-size:14px;color:#222}
+
+/* SIDEBAR */
+.widget{margin-bottom:14px}
+.subscribe input{width:100%;padding:10px;border-radius:6px;border:1px solid #eee;margin-bottom:8px}
+.subscribe button{width:100%;padding:10px;border-radius:6px;border:none;background:var(--brand);color:#fff;font-weight:700;cursor:pointer}
+.recent li{list-style:none;padding:8px 0;border-bottom:1px solid #f1f1f1}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{background:#eef6ff;padding:6px 8px;border-radius:6px;font-size:13px}
+
+/* HOVER & ANIMATION EFFECTS */
+.card{transition:all .3s ease;}
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 22px rgba(0,0,0,0.18);} 
+.article img{transition:transform .3s ease;} 
+.article:hover img{transform:scale(1.05);} 
+nav.main-nav a{transition:background .3s ease, padding .2s;} 
+nav.main-nav a:hover{padding:8px 15px;}  
+.search-wrap button:hover{opacity:.85;transform:scale(1.05);} 
+/* QUICK LINKS */
+.quick-link{flex:1;min-width:180px;text-decoration:none;color:inherit;display:block}
+
+/* FOOTER */
+footer{text-align:center;color:var(--muted);font-size:13px;margin-top:20px}
+
+/* RESPONSIVE */
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr}
+  .article img{width:120px;height:80px}
+  .search-wrap input{min-width:120px}
+  .logo h1{font-size:18px}
+}
+
+@media (max-width:480px){
+  .logo .mark{width:40px;height:40px}
+  nav.main-nav{display:none}
+  .site-top{flex-direction:column;align-items:flex-start}
+  .search-wrap{width:100%}
+}
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
